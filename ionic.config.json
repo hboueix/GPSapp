@@ -1,0 +1,7 @@
+{
+  "name": "GPSapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
