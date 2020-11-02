@@ -3,10 +3,6 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
-/* My components */
-import Live from './pages/Live';
-import Profile from './pages/Profile';
-
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -26,13 +22,16 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+/* Tabs */
+import { ROUTE_LIVE, ROUTE_TABS_BASE } from './nav/Routes';
+import Tabs from './nav/Tabs';
+
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/live" component={Live} exact={true} />
-        <Route path="/profile" component={Profile} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/live" />} />
+        <Route path={ROUTE_TABS_BASE} component={Tabs} />
+        <Redirect path="/" exact to={ROUTE_LIVE} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
