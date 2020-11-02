@@ -1,6 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Live.css';
 
 const Live: React.FC = () => {
@@ -17,7 +16,6 @@ const Live: React.FC = () => {
             <IonTitle size="large">Live</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
       </IonContent>
     </IonPage>
   );
