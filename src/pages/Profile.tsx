@@ -37,29 +37,8 @@ const Profile: React.FC = () => {
   return (
     <IonPage id="Profile">
       <IonHeader>
-        <IonToolbar>
-          {/* <IonTitle className='ion-text-center'>Profile</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonGrid className='ion-padding'>
-          <IonRow>
-            <ResponsiveContent>
-              <IonLabel>Username</IonLabel>
-              <IonLabel className='ion-float-right'>hboueix</IonLabel>
-            </ResponsiveContent>
-          </IonRow>
-          <IonRow>
-            <ResponsiveContent>
-              <IonLabel>Last latitude</IonLabel>
-              <IonLabel className='ion-float-right'>45.1234567890</IonLabel>
-            </ResponsiveContent>
-          </IonRow>
-          <IonRow>
-            <ResponsiveContent>
-              <IonLabel>Last longitude</IonLabel>
-              <IonLabel className='ion-float-right'>5.0987654321</IonLabel> */}
-          <IonTitle className='ion-text-center'>Profile</IonTitle>
+        <IonToolbar color='primary' className='ion-text-center'>
+          <IonTitle>Profile</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -82,25 +61,6 @@ const Profile: React.FC = () => {
               <IonLabel className='ion-float-right'>{longitude}</IonLabel>
             </ResponsiveContent>
           </IonRow>
-
-                    {/* <IonInput onClick={() => setShowAlert(true)}>{appCtx.profile.username}</IonInput>
-                  </IonItem>
-                </IonCard>
-                <IonCard >
-                  <IonItemDivider>Last Latitude</IonItemDivider>
-                  <IonItem>
-                    <IonLabel>{latitude}</IonLabel>
-                  </IonItem>
-                </IonCard>
-                <IonCard >
-                  <IonItemDivider>Last Longitude</IonItemDivider>
-                  <IonItem>
-                    <IonLabel>{longitude}</IonLabel>
-                  </IonItem>
-                </IonCard>
-              </IonList>
-            </ResponsiveContent>
-          </IonRow> */}
         </IonGrid>
       </IonContent>
       <IonAlert

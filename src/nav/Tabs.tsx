@@ -9,7 +9,7 @@ import {
     IonTabs
 } from '@ionic/react';
 
-import { radioOutline, personCircleOutline } from 'ionicons/icons'
+import { personCircleOutline, listOutline } from 'ionicons/icons'
 import Live from '../pages/Live';
 import Profile from '../pages/Profile';
 import { ROUTE_LIVE, ROUTE_PROFILE, ROUTE_TABS_BASE } from './Routes';
@@ -23,8 +23,8 @@ const Tabs: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
             <IonTabButton tab="List" href={ROUTE_LIVE}>
-                <IonIcon icon={radioOutline} />
-                <IonLabel>List</IonLabel>
+                <IonIcon icon={listOutline} />
+                <IonLabel>Live</IonLabel>
             </IonTabButton>
             <IonTabButton tab="Profile" href={ROUTE_PROFILE}>
                 <IonIcon icon={personCircleOutline} />

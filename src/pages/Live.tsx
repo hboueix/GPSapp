@@ -20,7 +20,7 @@ const Live: React.FC = () => {
   return (
     <IonPage id="Live">
       <IonHeader id="headerRow">
-        <IonToolbar className='ion-text-center'>
+        <IonToolbar color='primary' className='ion-text-center'>
           <IonTitle>Live position</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -28,22 +28,22 @@ const Live: React.FC = () => {
         <IonGrid>
           <IonRow className='ion-text-center'>
             <ResponsiveContent>
-              <IonLabel>Your current position is :</IonLabel>
+              <IonTitle>Your current position is :</IonTitle>
             </ResponsiveContent>
           </IonRow>
           <IonRow>
             <ResponsiveContent>
-              <IonLabel>Latitude : {latitude}</IonLabel>
+              <IonLabel><strong>Latitude:</strong> {latitude}</IonLabel>
             </ResponsiveContent>
           </IonRow>
           <IonRow>
             <ResponsiveContent>
-              <IonLabel>Longitude : {longitude}</IonLabel>
+              <IonLabel><strong>Longitude:</strong> {longitude}</IonLabel>
             </ResponsiveContent>
           </IonRow>
           <IonRow>
             <ResponsiveContent>
-              <IonButton className="ion-float-right">
+              <IonButton  fill='outline' className="ion-float-right">
                 <IonIcon icon={save}></IonIcon>
                 <IonLabel>Save !</IonLabel>
               </IonButton>
