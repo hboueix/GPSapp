@@ -29,11 +29,15 @@ const Live: React.FC = () => {
               <IonLabel>Longitude : 5.0987654321</IonLabel>
             </ResponsiveContent>
           </IonRow>
+          <IonRow>
+            <ResponsiveContent>
+              <IonButton className="ion-float-right">
+                <IonIcon icon={save}></IonIcon>
+                <IonLabel>Save !</IonLabel>
+              </IonButton>
+            </ResponsiveContent>
+          </IonRow>
         </IonGrid>
-        <IonButton className="ion-float-right">
-          <IonIcon icon={save}></IonIcon>
-          <IonLabel>Save !</IonLabel>
-        </IonButton>
       </IonContent>
     </IonPage>
   );
