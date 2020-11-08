@@ -1,9 +1,10 @@
+import { Geoposition } from '@ionic-native/geolocation';
 import React from 'react';
 
 export interface Localisation {
     id: string, 
-    latitude: number,
-    longitude: number
+    latitude: number|undefined,
+    longitude: number|undefined
 }
 export interface Profile {
     id: string,
@@ -19,8 +20,8 @@ export const defaultProfile: Profile = {
 
 export const defaultLocalisation: Localisation = {
     id: '0',
-    latitude: 0.00000,
-    longitude: 0.00000
+    latitude: 0.0,
+    longitude: 0.0
 }
 
 interface AppContext {
