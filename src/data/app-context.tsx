@@ -1,4 +1,3 @@
-import { Geoposition } from '@ionic-native/geolocation';
 import React from 'react';
 
 export interface Localisation {
