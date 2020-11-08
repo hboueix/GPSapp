@@ -23,8 +23,6 @@ import ResponsiveContent from '../components/ResponsiveContent';
 
 const Profile: React.FC = () => {
   const [showAlert, setShowAlert] = useState(false);
-  const [latitude] = useState<number>(-63572375290155);
-  const [longitude] = useState<number>(106744840359415);
 
   const appCtx = useContext(AppContext)
 
@@ -73,13 +71,13 @@ const Profile: React.FC = () => {
           <IonRow>
             <ResponsiveContent>
               <IonLabel>Last latitude</IonLabel>
-              <IonLabel className='ion-float-right'>{latitude}</IonLabel>
+              <IonLabel className='ion-float-right'>{appCtx.localisation.latitude}</IonLabel>
             </ResponsiveContent>
           </IonRow>
           <IonRow>
             <ResponsiveContent>
               <IonLabel>Last longitude</IonLabel>
-              <IonLabel className='ion-float-right'>{longitude}</IonLabel>
+              <IonLabel className='ion-float-right'>{appCtx.localisation.longitude}</IonLabel>
             </ResponsiveContent>
           </IonRow>
 
